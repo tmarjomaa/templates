@@ -1,1 +1,1 @@
-# templates
+Based on the [201-vm-custom-script-windows](ttps://github.com/Azure/azure-quickstart-templates/tree/master/201-vm-custom-script-windows) this template allows you to deploy a simple Windows VM while executing custom PowerShell script to set regional setttings for the VM using custom script extension. 
