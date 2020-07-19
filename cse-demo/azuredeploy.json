@@ -177,7 +177,7 @@
             "settings": {
               "fileUris": [
                 "https://raw.githubusercontent.com/tmarjomaa/templates/master/cse-demo/Initialise-VM.ps1",
-                "https://raw.githubusercontent.com/tmarjomaa/templates/master/cse-demo/FIRegion.xml"
+                "https://raw.githubusercontent.com/tmarjomaa/templates/master/cse-demo/UKRegion.xml"
               ],
               "commandToExecute": "powershell.exe -ExecutionPolicy Unrestricted -File Initialise-VM.ps1"
             },
