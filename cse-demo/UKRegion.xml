@@ -15,11 +15,12 @@
 </gs:LocationPreferences>
 <gs:MUILanguagePreferences>
 	<gs:MUILanguage Value="en-GB"/>
-	<gs:MUIFallback Value="en-US"/>
+	<gs:MUIFallback Value="en-GB"/>
 </gs:MUILanguagePreferences>
 <!-- input preferences -->
 <gs:InputPreferences>
     <!--en-GB-->
-    <gs:InputLanguageID Action="add" ID="0809:00000809" Default="true"/> 
+    <gs:InputLanguageID Action="add" ID="0809:00000809" Default="true"/>
+    <gs:InputLanguageID Action="remove" ID="0409:00000409"/>
 </gs:InputPreferences>
 </gs:GlobalizationServices>
