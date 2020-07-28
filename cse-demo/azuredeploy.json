@@ -33,6 +33,17 @@
         "description": "Size of the virtual machine."
       }
     },
+    "languageSettings": {
+      "type": "string",
+      "defaultValue": "FI",
+      "allowedValues": [
+        "UK",
+        "FI"
+      ],
+      "metadata": {
+        "description": "Select the OS type to deploy."
+      }
+    },
     "location": {
       "type": "string",
       "defaultValue": "[resourceGroup().location]",
@@ -51,7 +62,9 @@
     "virtualNetworkName": "MyVNET",
     "publicIPAddressName": "myPublicIP",
     "dnsNameForPublicIP": "[uniqueString(resourceGroup().id)]",
-    "networkSecurityGroupName": "default-NSG"
+    "networkSecurityGroupName": "default-NSG",
+    "UK": "https://raw.githubusercontent.com/tmarjomaa/templates/master/cse-demo/UKRegion.xml",
+    "FI": "https://raw.githubusercontent.com/tmarjomaa/templates/master/cse-demo/FIRegion.xml"
   },
   "resources": [
     {
@@ -196,7 +209,7 @@
             "settings": {
               "fileUris": [
                 "https://raw.githubusercontent.com/tmarjomaa/templates/master/cse-demo/Initialise-VM.ps1",
-                "https://raw.githubusercontent.com/tmarjomaa/templates/master/cse-demo/UKRegion.xml"
+                "[if(equals(parameters('languageSettings'), 'UK'), variables('UK'), variables('FI'))]"                
               ],
               "commandToExecute": "powershell.exe -ExecutionPolicy Unrestricted -File Initialise-VM.ps1"
             },
