@@ -63,8 +63,8 @@
     "publicIPAddressName": "myPublicIP",
     "dnsNameForPublicIP": "[uniqueString(resourceGroup().id)]",
     "networkSecurityGroupName": "default-NSG",
-    "UK": "https://raw.githubusercontent.com/tmarjomaa/templates/master/cse-demo/UKRegion.xml",
-    "FI": "https://raw.githubusercontent.com/tmarjomaa/templates/master/cse-demo/FIRegion.xml",
+    "UK-XML": "https://raw.githubusercontent.com/tmarjomaa/templates/master/cse-demo/UKRegion.xml",
+    "FI-XML": "https://raw.githubusercontent.com/tmarjomaa/templates/master/cse-demo/FIRegion.xml",
     "UK-PS1": "https://raw.githubusercontent.com/tmarjomaa/templates/master/cse-demo/Initialise-VM-UK.ps1",
     "FI-PS1": "https://raw.githubusercontent.com/tmarjomaa/templates/master/cse-demo/Initialise-VM-FI.ps1"
   },
@@ -211,7 +211,7 @@
             "settings": {
               "fileUris": [
                 "[if(equals(parameters('languageSettings'), 'UK'), variables('UK-PS1'), variables('FI-PS1'))]",
-                "[if(equals(parameters('languageSettings'), 'UK'), variables('UK'), variables('FI'))]"                
+                "[if(equals(parameters('languageSettings'), 'UK'), variables('UK-XML'), variables('FI-XML'))]"                
               ],
               "commandToExecute": "[concat("powershell.exe -ExecutionPolicy Unrestricted -File Initialise-VM-",parameters('languageSettings'),".ps1"]"
             },
