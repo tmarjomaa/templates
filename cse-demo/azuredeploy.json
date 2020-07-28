@@ -213,7 +213,7 @@
                 "[if(equals(parameters('languageSettings'), 'UK'), variables('UK-PS1'), variables('FI-PS1'))]",
                 "[if(equals(parameters('languageSettings'), 'UK'), variables('UK-XML'), variables('FI-XML'))]"                
               ],
-              "commandToExecute": "[concat("powershell.exe -ExecutionPolicy Unrestricted -File Initialise-VM-",parameters('languageSettings'),".ps1"]"
+              "commandToExecute": "[concat('powershell.exe -ExecutionPolicy Unrestricted -File Initialise-VM-',parameters('languageSettings'),'.ps1']"
             },
             "protectedSettings": {
             }
