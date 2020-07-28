@@ -6,3 +6,4 @@
  
 # Set languages/culture
 Set-Culture en-GB
+Restart-Computer
