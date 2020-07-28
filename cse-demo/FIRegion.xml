@@ -5,10 +5,10 @@
 </gs:UserList>
 <!-- user locale -->
 <gs:UserLocale> 
-    <gs:Locale Name="en-GB" SetAsCurrent="true"/> 
+    <gs:Locale Name="fi-FI" SetAsCurrent="true"/> 
 </gs:UserLocale>
 <!-- system locale -->
-<gs:SystemLocale Name="en-GB"/>
+<gs:SystemLocale Name="fi-FI"/>
 <!-- GeoID -->
 <gs:LocationPreferences> 
     <gs:GeoID Value="77"/> 
@@ -20,6 +20,7 @@
 <!-- input preferences -->
 <gs:InputPreferences>
     <!--fi-FI-->
-    <gs:InputLanguageID Action="add" ID="040b:0000040b" Default="true"/> 
+    <gs:InputLanguageID Action="add" ID="040b:0000040b" Default="true"/>
+    <gs:InputLanguageID Action="remove" ID="0409:00000409"/>
 </gs:InputPreferences>
 </gs:GlobalizationServices>
