@@ -14,4 +14,4 @@ New-Item -Path "REGISTRY::HKEY_USERS\.DEFAULT\Keyboard Layout\Substitutes" -Forc
 New-ItemProperty -Path "REGISTRY::HKEY_USERS\.DEFAULT\Keyboard Layout\Preload" -Name "1" -Value "0000040b" -PropertyType String -Force | Out-File c:\c.txt
 New-ItemProperty -Path "REGISTRY::HKEY_USERS\.DEFAULT\Keyboard Layout\Preload" -Name "4" -Value "0000040b" -PropertyType String -Force | Out-File c:\d.txt
 
-Restart-Computer
+# Restart-Computer
