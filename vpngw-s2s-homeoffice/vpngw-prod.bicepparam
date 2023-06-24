@@ -1,0 +1,12 @@
+using './vpngw-prod.bicep'
+
+param location = 'westeurope'
+param vpnGatewayName = 'vpngw-prod'
+param hubVnetName = 'hub-vnet-prod'
+param publicIpName = 'vpngw-prod-pip'
+param publicIpDNSLabel = 'building4cloud-vpngw-prod'
+param homeOfficeLgwName = 'homeoffice-lgw'
+param homeOfficeAddressSpace = '192.168.10.0/24'
+param homeOfficePublicIpAddress = ''
+param homeOfficeConnectionName = 'connection-to-homeoffice'
+param sharedKey = ''
