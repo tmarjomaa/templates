@@ -1,0 +1,10 @@
+using 'main.bicep'
+
+param location = 'westeurope'
+param iothubName = 'airquality-iot-demo'
+param iothubSkuName = 'F1'
+param eventhubNamespaceName = 'airquality-iot-demo'
+param eventhubNamespaceSkuName = 'Basic'
+param eventhubName = 'airquality-iot-demo-eh'
+param routingEndpointEventHubName = 'airquality-iot-demo-eh-endpoint'
+param userAssignedIdentityName = 'airquality-iot-demo-iothub-identity'
